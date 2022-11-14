@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOW TO STRUCTURE YOUR HTML CODE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+    
+        
+      <nav>
+   
+            <h1>Bite Real Estate</h1>
+            <ul class="menu">
+                <img src="./icon-menu-close.svg" alt="" class="close">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#first-sec">About Us</a></li>
+                <li><a href="#second-sec">Services</a></li>
+                <li><a href="#third-sec">contact</a></li>
+                <li class="link">more... <span><img src="./down icon.png" alt="">
+                    <ul class="sub_link">
+                        <li>Partnership</li>
+                        <li>featured</li>
+                        <li class="fea">Sponsorer <img src="./down icon.png" alt=""></li>
+                    </ul>
+                </span>
+            </li>
+            <li class="social"><a href="#footer" id="link_footer">social links</a></li>
+            </ul> 
+            <div class="toggle">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+    </nav>
+    <div class="center">
+
+        <div class="hero">
+            <h1>
+                Beautiful & cheap <br> Homes for sale
+            </h1>
+            <button>Get Started</button>
+        </div>
+    </div>
+</header>
+<img src="./pexels-binyamin-mellish-1396122.jpg" alt="" class="overlay">
+
+<main>
+  
+
+        <section id="first-sec">
+            <h1>About Us</h1>
+            <div class="txt-img">
+
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iusto consectetur, quas non, recusandae nesciunt a ad perferendis possimus rem tenetur eligendi numquam labore, expedita ex ratione nostrum. Perspiciatis nemo nostrum ut, ab, fugit corporis dicta voluptatum neque provident, expedita ipsum. Cupiditate quos, doloremque quisquam, consequatur, provident sequi natus ipsum minus nesciunt dicta autem! Iure aut aspernatur molestias ab rerum sapiente quae consequuntur, deserunt culpa dicta perferendis corrupti veritatis cum nam ut mollitia reiciendis, laudantium unde earum voluptatem molestiae accusantium?</small>
+            <img src="./pexels-curtis-adams-3288100.jpg" alt="">
+
+
+
+        </div>
+
+    </section>
+
+    <section id="second-sec">
+        <h1>What we Do?</h1>
+        <div class="rate">
+
+            <div class="rating_tresure">
+                <div class="bronze">
+                    <h1>BRONZE</h1>
+                <p>Affordable Houses</p>
+                <p>Neat Roads</p>
+                <p>24/7 Electricty</p>
+                <p>Close To main Road</p>
+                <p>Street Light Available</p>
+                <button>$200</button>
+            </div>
+            
+
+            <div class="bronze">
+                <h1>SILVER</h1>
+                <p>Affordable Houses</p>
+                <p>Neat Roads</p>
+                <p>24/7 Electricty</p>
+                <p>Close To main Road</p>
+                <p>Street Light Available</p>
+                <button>$700</button>
+            </div>
+            
+
+            <div class="bronze">
+                <h1>GOLD</h1>
+                <p>Affordable Houses</p>
+                <p>Neat Roads</p>
+                <p>24/7 Electricty</p>
+                <p>Close To main Road</p>
+                <p>Street Light Available</p>
+                <button>$1000</button>
+            </div>
+            
+        </div>
+        </div>
+    </section>
+    <section id="third-sec">
+        <form action="" method="get">
+            <div class="form_flex">
+
+                <input type="text" placeholder="Full Name">
+                <input type="email" name="" id="" placeholder="Email Address">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="comments" style="padding: .5rem;"></textarea>
+            <button>submit</button>
+        </form>
+
+    </section>
+    </main>
+    
+    <footer id="footer">
+        <ul>
+            <h1>Address</h1>
+            <li><a href="NIIT surulere">NIIT surulere</a></li>
+            <li><a href="Funsho Williams AV LG.">Funsho Williams AV LG.</a></li>
+            <li> <a href="tel:+234-901-992-2712, +234-712-384-8784">+234-901-992-2712, +234-712-384-8784</a></li>
+        </ul>
+        <ul>
+            <h1>Social Links</h1>
+            <ul class="sub_unordered_list">
+
+                <li><a href="facebook.com"><img src="./icon1.png" alt=""></a></li>
+                <li><a href="twitter.com"><img src="./icon2.png" alt=""></a></li>
+            <li><a href="linkeddin.com"><img src="./icon3.png" alt=""></a></li>
+            <li><a href="instagram.com"><img src="./icon4.png" alt=""></a></li>
+            <li><a href="tel:09019962712"><img src="./footer phone.png" alt=""></a></li>
+            
+        </ul>
+        </ul>
+        <ul>
+            <h1>Partners</h1>
+            <li><a href="MasterCard">MasterCard</a></li>
+            <li><a href="Shopify">Shopify</a></li>
+            <li><a href="Visa">Visa</a></li>
+      
+        </ul>
+    </footer>
+    
+
+
+    <script>
+        var open = document.querySelector(".toggle")
+        var menu = document.querySelector(".menu")
+        var close = document.querySelector(".close")
+
+
+
+        open.addEventListener("click", ()=>{
+            menu.classList.add("active")
+        })
+        close.addEventListener("click", ()=>{
+            menu.classList.remove("active")
+        })
+       
+
+      
+
+        window.addEventListener("scroll", function(){
+            var navBar = document.querySelector("nav")
+            var scrollValue = window.scrollY
+
+            if(scrollValue < 150){
+                navBar.classList.remove("act")
+            }else{
+                navBar.classList.add("act")
+
+            }
+            
+        })
+
+         
+     
+    </script>
+</body>
+</html>
